@@ -169,14 +169,68 @@ body{
 .clock .line59{--rotation: 354deg;}
 
 .bubble {
-    bottom: 2%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: -80px;
     position: absolute;
+}
+.bubble img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: bubbles 7s linear infinite;
+}
+@keyframes bubbles{
+    0%{
+        transform: translateY(0%);
+        opacity: 0;
+
     }
-    .bubble img{
-        padding-left: 90px;
-        padding-right: 90px;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-    }
+}
+@keyframes bubbles{
+
+    50%{
+        transform: translateY(0);
+        opacity: 1;
     
+    }
+}
+@keyframes bubbles{
+    70%{       
+         transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes bubbles{
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+
+    }
+}
+.bubble :nth-child(1){
+    animation-delay: 2s;
+    width: 30px;
+    height: 30px;
+}.bubble :nth-child(2){
+    animation-delay: 1s;
+}.bubble :nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+    height: 25px;
+}.bubble :nth-child(4){
+    animation-delay: 4s;
+
+}.bubble :nth-child(5){
+    animation-delay: 3.5s;
+}.bubble :nth-child(6){
+    animation-delay: 6s;
+    width: 40px;
+    height: 40px;
+}.bubble :nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+    height: 35px;
+}
