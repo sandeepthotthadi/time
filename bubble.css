@@ -173,7 +173,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    bottom: -80px;
+    bottom: -180px;
     position: absolute;
 }
 .bubble img{
